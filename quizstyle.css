@@ -1,0 +1,73 @@
+html, body {
+    height: 95%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://res.cloudinary.com/dkkzjhy90/image/upload/v1594215785/samples/landscapes/beach-boat.jpg");
+    
+  }
+.first h1 {
+    color: white;
+    text-align: center;
+    font-size: 350%;
+}
+.second h2 {
+    color: #fde74c;
+    text-align: center;
+}
+.second {
+    position: relative;
+    background-image: linear-gradient(to right, #1A2980, #26D0CE);
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+}
+.second p {
+    text-align: center;
+    color: #f7f7ff;
+    font-size: 20px;
+}
+.btn {
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #f3ffbd;
+    font-family: Inter, sans serif;
+    font-weight: bold;
+}
+.btn2 {
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #f3ffbd;
+    font-family: Inter, sans serif;
+    font-weight: bold;
+}
+#quizPage {
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+}
+  
+.page {
+    display: block;
+    position: absolute;
+}
+#menuPage {
+     top: 30%;
+     left: 30%;
+}
+#answersAlert {
+    background-color: white;
+    padding: 150px;
+}
+#answersPage {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#finishingPage {
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "quizstyle.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5691/5691719.png">
+    <title>Quiz trip</title>
+</head>
+<body>
+    <!-- Menu page -->
+    <div class = "first">
+        <h1>Quiz trip</h1>
+    </div>
+    <div class = "second">
+        <h2>Welcome to our quiz!</h2>
+        <p>Choose your category:</p>
+        <div class = "page" id = "menuPage">
+            <div class = "center">
+                <button onclick = "startQuiz('music')" class = "btn">Music</button>
+                <button onclick = "startQuiz('movies')" class = "btn">Movies</button>
+                <button onclick = "startQuiz('maths')" class = "btn">Maths</button>
+                <button onclick = "startQuiz('geography')" class = "btn">Geography</button>
+                <button onclick = "startQuiz('history')" class = "btn">History</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quiz page -->
+    <div id = "quizPage">
+        <div class = "center">
+            <h1 id = "quizPageQuestion">Question</h1>
+            <button class = "btn2" id = "quizPageVar1" onclick = "answerVar(1)">Variant 1</button>
+            <button class = "btn2" id = "quizPageVar2" onclick = "answerVar(2)">Variant 2</button>
+            <button class = "btn2" id = "quizPageVar3" onclick = "answerVar(3)">Variant 3</button>
+            <button class = "btn2" id = "quizPageVar4" onclick = "answerVar(4)">Variant 4</button>
+        </div>
+    </div>
+    
+    <!-- Answer page -->
+    <div class = "page" id = "answersPage">
+        <div class = "center" id = "answersAlert">
+            <h1 id = "answersText"></h1>
+        </div>
+    </div>
+    
+    <!-- Finish page -->
+    <div id = "finishingPage">
+        <div class = "center" id = "finishingAlert">
+            <h1 id = "finishingText"></h1>
+            <button class = "btn2" onclick="closeQuiz()">I'm done</button>
+        </div>
+    </div>
+    <script src = "quizscript.js"></script>
+</body>
+</html>
